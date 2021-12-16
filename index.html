@@ -28,29 +28,39 @@
 
   <main>
     <div class="container-fluid">
-      <div class="row p-5">
-        <div class="col-md-3 shadow rounded">
+      <div class="row p-5 justify-content-evenly" id="sportingGoods">
+        <!-- <div class="col-md-3 shadow rounded border border-dark">
           <div class="row">
             <div class="col-12 text-center">
-              <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Baseball_%28crop%29.jpg" class="pt-4" alt="" width="200" height="200">
+              <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Baseball_%28crop%29.jpg" class="pt-4 img-fluid" alt=" ">
             </div>
             <div class="mt-2 text-center">
-              <h3>Baseball</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quas.</p>
+              <h3 class="border border-dark rounded">Baseball</h3>
+              <p class="border border-dark rounded">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quas.</p>
             </div>
             <div class="justify-content-between align-items-center d-flex p-2">
-              <p>Stock:10</p>
-              <p>$5</p>
-              <i class="mdi mdi-delete"></i>
+              <p class="border border-dark p-3 rounded">Stock:10</p>
+              <p class="border border-dark p-3 rounded">$5</p>
+              <button type="button" class="btn btn-secondary" onclick="addToCart()">Add To Cart</button>
             </div>
           </div>
-        </div>
+        </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
     </div>
+    <div class="col-md-6">
+      <h3>Order</h3>
+      <div class="rounded bg-white h-50 m-3 p-3">
+        <div id="cart" class="cart"></div>
+        <div class="d-flex justify-content-between p-3">
+          <li id="checkOut">
+          </li>
+          <button id="checkout-button" disabled class="btn btn-success" onclick="checkout()">Checkout</button>
+        </div>
+
   </main>
 
 
